@@ -21,7 +21,8 @@ class TutorialPipeline(object):
     def process_item(self, item, spider):
         self.total += 1  # 累计文章数
         # 显示基本数据内容，通常可以在这个方法中对数据保存入库、触发分析动作等
-        # print("%s %s %s" % (item['date'], item['title'], item['link']))
+        print(item)
+        # print("%s %s %s" % (item['movieName'], item['published'], item['movieLink']))
         # host = settings.MYSQL_HOST
         # user = settings.MYSQL_USER
         # psd = settings.MYSQL_PASSWORD
